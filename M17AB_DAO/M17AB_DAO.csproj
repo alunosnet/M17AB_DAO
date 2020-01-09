@@ -67,24 +67,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adicionarRecluso.aspx" />
     <Content Include="adicionarSeguranca.aspx" />
     <Content Include="App_Data\bd.mdf" />
     <Content Include="App_Data\bd_log.ldf">
       <DependentUpon>bd.mdf</DependentUpon>
     </Content>
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\css.css" />
+    <Content Include="gerirRecluso.aspx" />
     <Content Include="gerirSeguranca.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\codigo.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="pesquisarRecluso.aspx" />
+    <Content Include="pesquisarSeguranca.aspx" />
     <Content Include="SQLQuery1.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adicionarRecluso.aspx.cs">
+      <DependentUpon>adicionarRecluso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adicionarRecluso.aspx.designer.cs">
+      <DependentUpon>adicionarRecluso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adicionarSeguranca.aspx.cs">
       <DependentUpon>adicionarSeguranca.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adicionarSeguranca.aspx.designer.cs">
       <DependentUpon>adicionarSeguranca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gerirRecluso.aspx.cs">
+      <DependentUpon>gerirRecluso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gerirRecluso.aspx.designer.cs">
+      <DependentUpon>gerirRecluso.aspx</DependentUpon>
     </Compile>
     <Compile Include="gerirSeguranca.aspx.cs">
       <DependentUpon>gerirSeguranca.aspx</DependentUpon>
@@ -110,10 +142,34 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="pesquisarRecluso.aspx.cs">
+      <DependentUpon>pesquisarRecluso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pesquisarRecluso.aspx.designer.cs">
+      <DependentUpon>pesquisarRecluso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisarSeguranca.aspx.cs">
+      <DependentUpon>pesquisarSeguranca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pesquisarSeguranca.aspx.designer.cs">
+      <DependentUpon>pesquisarSeguranca.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
