@@ -33,8 +33,9 @@
             <asp:TextBox Text='<%# Bind("altura_cm") %>' runat="server" ID="altura_cmTextBox" /><br />
             peso:
             <asp:TextBox Text='<%# Bind("peso") %>' runat="server" ID="pesoTextBox" /><br />
-            id_seguranca:
-            <asp:DropDownList ID="DropDownList1" runat="server" SelectedValue='<%# Bind("id_seguranca") %>'></asp:DropDownList><br />
+            Segurança:
+            <asp:DropDownList ID="DropDownList1" runat="server" SelectedValue='<%# Bind("id_seguranca") %>' DataSourceID="SqlSeguranca" DataTextField="descricao" DataValueField="id"></asp:DropDownList><asp:SqlDataSource runat="server" ID="SqlSeguranca" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [id], [descricao] FROM [Seguranca] ORDER BY [descricao]"></asp:SqlDataSource>
+            <br />
             fotografia:
             <asp:FileUpload runat="server" ID="FileUpload1" /><br />
             <asp:LinkButton runat="server" Text="Insert" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
@@ -70,7 +71,7 @@
             <asp:Parameter Name="altura_cm" Type="Int32"></asp:Parameter>
             <asp:Parameter Name="peso" Type="Int32"></asp:Parameter>
             <asp:Parameter Name="id_seguranca" Type="Int32"></asp:Parameter>
-            <asp:Parameter Name="fotografia" Type="Object"></asp:Parameter>
+            <asp:Parameter Name="fotografia" ></asp:Parameter>
         </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="nome" Type="String"></asp:Parameter>

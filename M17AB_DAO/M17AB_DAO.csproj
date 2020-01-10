@@ -93,7 +93,9 @@
     <Content Include="js\popper.min.js" />
     <Content Include="pesquisarRecluso.aspx" />
     <Content Include="pesquisarSeguranca.aspx" />
+    <Content Include="Servico.asmx" />
     <Content Include="SQLQuery1.sql" />
+    <Content Include="UsaServico.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +159,17 @@
       <DependentUpon>pesquisarSeguranca.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico.asmx.cs">
+      <DependentUpon>Servico.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UsaServico.aspx.cs">
+      <DependentUpon>UsaServico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsaServico.aspx.designer.cs">
+      <DependentUpon>UsaServico.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
